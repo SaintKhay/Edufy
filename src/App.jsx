@@ -1,0 +1,21 @@
+import { useState } from "react";
+import "./App.css";
+import Navbar from "../components/NavBar/NavBar.jsx";
+import SubHero from "../components/Sub-Hero.jsx";
+import About from "../components/About.jsx";
+import Join from "../components/JoinUs/JoinUs.jsx";
+import Hero from "../components/Hero/Hero.jsx";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <SubHero />
+      <About />
+      <Join />
+    </>
+  );
+}
+
+export default App;

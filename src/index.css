@@ -1,0 +1,79 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+button {
+  border-radius: 60px;
+  border: 1px solid transparent;
+  padding: 0.8em 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #2e574d;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Sub-hero */
+.sub-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+/* About section */
+.about-section {
+  background-color: #f0f5f2;
+  padding: 5rem 2.4rem;
+}
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 4rem;
+}
+.about-sub img {
+  display: block;
+  margin-left: 0;
+  padding-bottom: 3rem;
+  width: 4rem;
+}
+.about-head {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+  padding-bottom: 3rem;
+}
+.about-text {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: left;
+  line-height: 2.7rem;
+}
