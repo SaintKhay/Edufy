@@ -7,6 +7,23 @@ import star1 from "../../src/assets/images/star-2.svg";
 import styles from "../../components/Hero/Hero.module.css";
 
 export default function Hero() {
+  const designContainer = [
+    {
+      src: heroIcon,
+      alt: "hero-icons",
+      className: `${styles.shape1} ${styles.shapes}`,
+    },
+    {
+      src: heroIcon2,
+      alt: "hero-icons",
+      className: `${styles.shape2} ${styles.shapes}`,
+    },
+    {
+      src: heroIcon3,
+      alt: "hero-icons",
+      className: `${styles.shape3} ${styles.shapes}`,
+    },
+  ];
   return (
     <section className={`${styles.hero}  container`}>
       <div>
@@ -23,21 +40,14 @@ export default function Hero() {
         </div>
 
         <div className={styles.designcontainer}>
-          <img
-            className={`${styles.shape1} ${styles.shapes}`}
-            src={heroIcon}
-            alt="hero-icons"
-          />
-          <img
-            className={`${styles.shape2} ${styles.shapes}`}
-            src={heroIcon2}
-            alt="hero-icons"
-          />
-          <img
-            className={`${styles.shape3} ${styles.shapes}`}
-            src={heroIcon3}
-            alt="hero-icons"
-          />
+          {designContainer.map((item, index) => (
+            <img
+              key={index}
+              className={item.className}
+              src={item.src}
+              alt={item.alt}
+            />
+          ))}
 
           <img className={styles.star1} src={star1} alt="hero-icons" />
           <img className={styles.star2} src={star2} alt="hero-icons" />

@@ -3,6 +3,19 @@ import joinImg2 from "../../src/assets/images/join-img2.svg";
 import styles from "../../components/JoinUs/JoinUs.module.css";
 
 export default function Join() {
+  const joinSubsectionData = [
+    {
+      head: "9.8/10",
+      text: "Course approved score",
+      secText: "Achieving a complete course approval score is significant",
+    },
+    {
+      head: "13k",
+      text: "Satisfied students worldwide",
+      secText:
+        "Satisfied students worldwide share a common thread of happiness",
+    },
+  ];
   return (
     <section className={styles.joinsection}>
       <div className={styles.joincontainer}>
@@ -25,24 +38,20 @@ export default function Join() {
               <button className={styles.joinbtn}>Join Our Community</button>
             </div>
           </span>
+
           <div>
             <div className={styles.joinsubsection}>
-              <span>
-                <h2 className={styles.joinsubhead}>9.8/10</h2>
-                <p className={styles.joinsubtext}>
-                  <strong>Course approved score</strong> <br /> Achieving a
-                  complete course <br /> approval score is significant
-                </p>
-              </span>
-              <span>
-                styles.
-                <h2 className={styles.joinsubhead}>13k</h2>
-                <p className={styles.joinsubtext}>
-                  <strong>Satisfied students worldwide</strong> <br /> Satisfied
-                  students worldwide <br /> share a common thread of happiness
-                </p>
-              </span>
+              {joinSubsectionData.map((item, index) => (
+                <span key={index}>
+                  <h2 className={styles.joinsubhead}>{item.head}</h2>
+                  <p className={styles.joinsubtext}>
+                    <strong>{item.text}</strong>
+                    <br /> {item.secText}
+                  </p>
+                </span>
+              ))}
             </div>
+
             <div className={styles.joinsubsection2}>
               <img
                 src={joinImg2}

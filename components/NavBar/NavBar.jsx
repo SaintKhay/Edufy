@@ -4,6 +4,13 @@ import dropdown from "../../src/assets/images/dropdown-icon.svg";
 import styles from "../../components/NavBar/NavBar.module.css";
 
 export default function Navbar() {
+  const navBarMarkup = [
+    { title: "Demos", link: "#home", className: styles.flex },
+    { title: "CMS Pages", link: "#about", className: styles.flex },
+    { title: "Essential Pages", link: "#services", className: styles.flex },
+    { title: "Contact", link: "#contact", className: "" },
+    { title: "About Us", link: "#aboutus", className: "" },
+  ];
   return (
     <header className="container">
       <nav>
@@ -14,32 +21,20 @@ export default function Navbar() {
           fetchPriority="high"
         />
         <ul className={styles.navlinks}>
-          <li className="flex">
-            <a href="#home">Demos</a>
-            <img src={dropdown} alt="Dropdown Icon" className="dropdown-icon" />
-          </li>
-          <li className={styles.flex}>
-            <a href="#about">CMS Pages</a>
-            <img
-              src={dropdown}
-              alt="Dropdown Icon"
-              className={styles.dropdownicon}
-            />
-          </li>
-          <li className="flex">
-            <a href="#services">Essential Pages</a>
-            <img
-              src={dropdown}
-              alt="Dropdown Icon"
-              className={styles.dropdownicon}
-            />
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="#contact">About Us</a>
-          </li>
+          {navBarMarkup.map((item, index) => (
+            <li className={item.className} key={index}>
+              <a href={item.link}>{item.title}</a>
+              {item.title === "Demos" ||
+              item.title === "CMS Pages" ||
+              item.title === "Essential Pages" ? (
+                <img
+                  src={dropdown}
+                  alt="Dropdown Icon"
+                  className={styles.dropdownicon}
+                />
+              ) : null}
+            </li>
+          ))}
         </ul>
 
         <span className={styles.signin}>
