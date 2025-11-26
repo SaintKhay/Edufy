@@ -23,15 +23,7 @@
   margin: 2.8rem 0;
   text-align: left;
 }
-.herobtncontainer {
-  display: flex;
-  justify-content: flex-start;
-}
-.herobtn {
-  background-color: #2e574d;
-  color: #fff;
-  font-weight: 500;
-}
+
 .designcontainer {
   position: relative;
   width: 100%;

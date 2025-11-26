@@ -5,6 +5,8 @@ import SubHero from "../components/Sub-Hero.jsx";
 import About from "../components/About.jsx";
 import Join from "../components/JoinUs/JoinUs.jsx";
 import Hero from "../components/Hero/Hero.jsx";
+import AboutUs from "../components/AboutUs/AboutUs.jsx";
+import Courses from "../components/Courses/Courses.jsx";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <SubHero />
       <About />
       <Join />
+      <AboutUs />
+      <Courses />
     </>
   );
 }

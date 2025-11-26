@@ -35,8 +35,8 @@ export default function Hero() {
           to our team of experts. Our specialized online courses are designed to
           bring the classroom experience to you, no matter where you are.
         </p>
-        <div className={styles.herobtncontainer}>
-          <button className={styles.herobtn}>Get Started Now</button>
+        <div className='btn-container'>
+          <button className="btn">Get Started Now</button>
         </div>
 
         <div className={styles.designcontainer}>
