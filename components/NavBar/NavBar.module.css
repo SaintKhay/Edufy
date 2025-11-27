@@ -19,7 +19,7 @@ nav {
 }
 .navlinks a {
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #0d1714;
   font-weight: 400;
 }
@@ -37,4 +37,5 @@ nav {
 }
 .loginbtn {
   background-color: #c3f499;
+  font-size: 1.2rem;
 }

@@ -30,12 +30,12 @@ export default function Hero() {
         <h1 className={styles.headerprimary}>
           Study from home with our experts.
         </h1>
-        <p className={styles.headersubtitle}>
+        <p className={`page-text  ${styles.headersubtitle}`}>
           Studying from home has never been more effective or convenient, thanks
           to our team of experts. Our specialized online courses are designed to
           bring the classroom experience to you, no matter where you are.
         </p>
-        <div className='btn-container'>
+        <div className="btn-container">
           <button className="btn">Get Started Now</button>
         </div>
 

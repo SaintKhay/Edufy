@@ -53,7 +53,7 @@ export default function Courses() {
       <div className="container">
         <div className={styles.coursestextcontent}>
           <h2 className={styles.coursestitle}>Our popular courses</h2>
-          <p className={styles.coursessubtitle}>
+          <p className="page-text">
             Our popular courses are designed to meet the diverse needs and
             interests of our students,
             <br /> providing top-notch education and practical skills.

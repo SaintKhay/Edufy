@@ -30,8 +30,8 @@ export default function About() {
           return (
             <span className="about-sub" key={index}>
               <img src={section.image} alt="Monitor Icon" />
-              <h4 className="about-head">{section.title}</h4>
-              <p className="about-text">{section.content}</p>
+              <h4 className="about-head ">{section.title}</h4>
+              <p className="page-text about-text">{section.content}</p>
             </span>
           );
         })}

@@ -19,14 +19,22 @@ body {
   box-sizing: border-box;
 }
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
+
+.page-text {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  font-weight: 300;
+  color: #626965;
+}
+
 button {
   border-radius: 60px;
   border: 1px solid transparent;
   padding: 0.8em 2rem;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
@@ -84,10 +92,8 @@ button:focus-visible {
   padding-bottom: 3rem;
 }
 .about-text {
-  font-size: 1.4rem;
-  font-weight: 300;
   text-align: left;
-  line-height: 2.7rem;
+  font-weight: 400;
 }
 
 /* About Us */
@@ -115,11 +121,6 @@ button:focus-visible {
   line-height: 5rem;
 }
 
-.aboutustext {
-  font-size: 1.4rem;
-  font-weight: 300;
-  line-height: 2.6rem;
-}
 .aboutussubhead {
   font-size: 1.6rem;
   font-weight: 500;

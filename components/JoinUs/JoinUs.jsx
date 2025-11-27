@@ -20,7 +20,7 @@ export default function Join() {
     <section className={styles.joinsection}>
       <div className={styles.joincontainer}>
         <h1 className={styles.joinhead}>Join our free workshop</h1>
-        <p className={styles.jointext}>
+        <p className={`{styles.jointext} page-text`}>
           Join our free workshops to unlock a world of learning and growth
           opportunities! Our workshops <br /> are designed to cater to a diverse
           range of interests and skill levels.
@@ -58,7 +58,7 @@ export default function Join() {
                 className={styles.joinimg2}
                 alt="Edufy Tutor"
               />
-              <p>
+              <p className="page-text">
                 "All courses are incredibly to help people to achieve their
                 goals"
               </p>

@@ -28,7 +28,7 @@ export default function AboutUs() {
         <div className="aboutustextcontent">
           <div className="aboutushead">
             <h2>Creating a community of learners.</h2>
-            <p className="aboutustext">
+            <p className="aboutustext page-text">
               At Edux, we're dedicated to transforming education by providing a
               diverse range of high- quality courses that cater to learners of
               all levels.
@@ -45,9 +45,7 @@ export default function AboutUs() {
                 />
                 <span className={item.className}>
                   <h3 className=" aboutussubhead">{item.title}</h3>
-                  <p className="aboutussubtext aboutustext">
-                    {item.description}
-                  </p>
+                  <p className="aboutussubtext page-text">{item.description}</p>
                 </span>
               </div>
             ))}

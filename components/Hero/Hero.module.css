@@ -2,7 +2,7 @@
 .hero {
   display: flex;
   padding: 9.6rem 0;
-  gap: 13rem;
+  gap: 12rem;
 }
 
 .heroimage {
@@ -10,13 +10,13 @@
   height: auto;
 }
 .headerprimary {
-  font-size: 6.2rem;
+  font-size: 6rem;
   font-weight: 600;
   line-height: 6.5rem;
   text-align: left;
 }
 .headersubtitle {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #626965;
   line-height: 2.7rem;
   font-weight: 400;
@@ -27,7 +27,7 @@
 .designcontainer {
   position: relative;
   width: 100%;
-  height: 18rem; /* small, fits under hero */
+  height: 18rem;
 }
 
 .shapes {
