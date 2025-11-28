@@ -53,7 +53,9 @@ export default function Courses() {
     <section className={`courses   ${styles.coursessection}`}>
       <div className="container">
         <div className={styles.coursestextcontent}>
-          <h2 className={styles.coursestitle}>Our popular courses</h2>
+          <h2 className={`${styles.coursestitle}  secondary-header`}>
+            Our popular courses
+          </h2>
           <p className="page-text">
             Our popular courses are designed to meet the diverse needs and
             interests of our students,

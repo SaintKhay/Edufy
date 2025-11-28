@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import ScrollReveal from "./animations/ScrollReveal.jsx";
 
 import Navbar from "../components/NavBar/NavBar.jsx";
 import SubHero from "../components/Sub-Hero.jsx";
@@ -9,17 +8,40 @@ import Join from "../components/JoinUs/JoinUs.jsx";
 import Hero from "../components/Hero/Hero.jsx";
 import AboutUs from "../components/AboutUs/AboutUs.jsx";
 import Courses from "../components/Courses/Courses.jsx";
+import Learn from "../components/Learn/Learn.jsx";
+import AnimatedSection from "../components/AnimatedSection.jsx";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <SubHero />
-      <About />
-      <Join />
-      <AboutUs />
-      <Courses />
+      <AnimatedSection>
+        <Hero />
+      </AnimatedSection>
+
+      <AnimatedSection animation="slide-right">
+        <SubHero />
+      </AnimatedSection>
+
+      <AnimatedSection animation="slide-right">
+        <About />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <Join />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <AboutUs />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <Courses />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <Learn />
+      </AnimatedSection>
     </>
   );
 }

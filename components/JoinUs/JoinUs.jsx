@@ -16,6 +16,7 @@ export default function Join() {
         "Satisfied students worldwide share a common thread of happiness",
     },
   ];
+
   return (
     <section className={styles.joinsection}>
       <div className={styles.joincontainer}>
@@ -28,7 +29,7 @@ export default function Join() {
       </div>
 
       <div className={styles.joinsubcontainer}>
-        <img src={joinImg} className={styles.joinimage}></img>
+        <img loading="lazy" src={joinImg} className={styles.joinimage}></img>
         <div className={styles.joinsub}>
           <span>
             <h2 className={styles.joinsubhead}>
@@ -56,6 +57,7 @@ export default function Join() {
               <img
                 src={joinImg2}
                 className={styles.joinimg2}
+                loading="lazy"
                 alt="Edufy Tutor"
               />
               <p className="page-text">

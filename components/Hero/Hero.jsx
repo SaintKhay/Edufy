@@ -6,7 +6,6 @@ import star2 from "../../src/assets/images/star-1.svg";
 import star1 from "../../src/assets/images/star-2.svg";
 import styles from "../../components/Hero/Hero.module.css";
 import { gsap } from "gsap/gsap-core";
-import SplitText from "../../src/animations/Splittext.jsx";
 import TextType from "../../src/animations/TextType.jsx";
 
 export default function Hero() {
@@ -34,7 +33,7 @@ export default function Hero() {
         <TextType
           text={"Study from home with our experts."}
           className={styles.headerprimary}
-          typingSpeed={120}
+          typingSpeed={80}
           pauseDuration={500}
           showCursor={false}
           cursorCharacter="_"
