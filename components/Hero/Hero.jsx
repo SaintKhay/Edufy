@@ -5,6 +5,9 @@ import heroIcon3 from "../../src/assets/images/hero-icon3.svg";
 import star2 from "../../src/assets/images/star-1.svg";
 import star1 from "../../src/assets/images/star-2.svg";
 import styles from "../../components/Hero/Hero.module.css";
+import { gsap } from "gsap/gsap-core";
+import SplitText from "../../src/animations/Splittext.jsx";
+import TextType from "../../src/animations/TextType.jsx";
 
 export default function Hero() {
   const designContainer = [
@@ -24,12 +27,19 @@ export default function Hero() {
       className: `${styles.shape3} ${styles.shapes}`,
     },
   ];
+
   return (
     <section className={`${styles.hero}  container`}>
       <div>
-        <h1 className={styles.headerprimary}>
-          Study from home with our experts.
-        </h1>
+        <TextType
+          text={"Study from home with our experts."}
+          className={styles.headerprimary}
+          typingSpeed={120}
+          pauseDuration={500}
+          showCursor={false}
+          cursorCharacter="_"
+        />
+
         <p className={`page-text  ${styles.headersubtitle}`}>
           Studying from home has never been more effective or convenient, thanks
           to our team of experts. Our specialized online courses are designed to
@@ -38,7 +48,6 @@ export default function Hero() {
         <div className="btn-container">
           <button className="btn">Get Started Now</button>
         </div>
-
         <div className={styles.designcontainer}>
           {designContainer.map((item, index) => (
             <img

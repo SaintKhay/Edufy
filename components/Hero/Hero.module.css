@@ -14,7 +14,9 @@
   font-weight: 600;
   line-height: 6.5rem;
   text-align: left;
+  height: 12rem;
 }
+
 .headersubtitle {
   font-size: 1.4rem;
   color: #626965;

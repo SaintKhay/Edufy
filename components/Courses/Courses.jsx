@@ -6,6 +6,7 @@ import course5 from "./course-img5.svg";
 import course6 from "./course-img6.svg";
 import courseIcon from "./course-icon.svg";
 import styles from "../../components/Courses/Courses.module.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Courses() {
   const coursesData = [
@@ -67,6 +68,7 @@ export default function Courses() {
                 <p className={styles.course}>{course.title}</p>
                 <h3 className={styles.courseheader}>{course.header}</h3>
                 <img
+                  loading="lazy"
                   src={course.image}
                   alt="course-icon"
                   className={styles.courseimage}
