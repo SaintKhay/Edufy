@@ -1,22 +1,9 @@
 import joinImg from "../../src/assets/images/join-img.svg";
 import joinImg2 from "../../src/assets/images/join-img2.svg";
 import styles from "../../components/JoinUs/JoinUs.module.css";
+import { joinSubsectionData } from "./join";
 
 export default function Join() {
-  const joinSubsectionData = [
-    {
-      head: "9.8/10",
-      text: "Course approved score",
-      secText: "Achieving a complete course approval score is significant",
-    },
-    {
-      head: "13k",
-      text: "Satisfied students worldwide",
-      secText:
-        "Satisfied students worldwide share a common thread of happiness",
-    },
-  ];
-
   return (
     <section className={styles.joinsection}>
       <div className={styles.joincontainer}>
@@ -27,7 +14,6 @@ export default function Join() {
           range of interests and skill levels.
         </p>
       </div>
-
       <div className={styles.joinsubcontainer}>
         <img loading="lazy" src={joinImg} className={styles.joinimage}></img>
         <div className={styles.joinsub}>

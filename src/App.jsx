@@ -10,6 +10,8 @@ import AboutUs from "../components/AboutUs/AboutUs.jsx";
 import Courses from "../components/Courses/Courses.jsx";
 import Learn from "../components/Learn/Learn.jsx";
 import AnimatedSection from "../components/AnimatedSection.jsx";
+import Testimonials from "../components/Testimonial/Testimonial.jsx";
+import Head from "../components/Head.jsx";
 
 function App() {
   return (
@@ -42,6 +44,8 @@ function App() {
       <AnimatedSection>
         <Learn />
       </AnimatedSection>
+
+      <Testimonials />
     </>
   );
 }

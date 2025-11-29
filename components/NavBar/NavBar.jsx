@@ -2,15 +2,9 @@ import logo from "../../src/assets/images/logo.svg";
 import searchIcon from "../../src/assets/images/search-icon.svg";
 import dropdown from "../../src/assets/images/dropdown-icon.svg";
 import styles from "../../components/NavBar/NavBar.module.css";
+import { navBarMarkup } from "./navbar";
 
 export default function Navbar() {
-  const navBarMarkup = [
-    { title: "Demos", link: "#home", className: styles.flex },
-    { title: "CMS Pages", link: "#about", className: styles.flex },
-    { title: "Essential Pages", link: "#services", className: styles.flex },
-    { title: "Contact", link: "#contact", className: "" },
-    { title: "About Us", link: "#aboutus", className: "" },
-  ];
   return (
     <header className="container">
       <nav>

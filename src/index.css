@@ -149,3 +149,13 @@ button:focus-visible {
   align-self: flex-start;
   width: 45px;
 }
+/* Head */
+.headtextcontent {
+  margin-bottom: 9.6rem;
+}
+.headtitle {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 5.5rem;
+  padding-bottom: 1rem;
+}
