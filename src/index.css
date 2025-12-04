@@ -1,4 +1,5 @@
 html {
+  overflow-x: hidden;
   font-size: 62.5%;
 }
 
@@ -19,6 +20,11 @@ body {
   max-width: 100%;
   box-sizing: border-box;
 }
+.logo {
+  display: block;
+  margin-left: 0;
+  padding-bottom: 1rem;
+}
 
 .section-padding {
   padding: 9.6rem 0;
@@ -27,7 +33,9 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-
+.sub-hero-image {
+  width: 100%;
+}
 .page-text {
   font-size: 1.4rem;
   line-height: 2.6rem;
@@ -43,7 +51,7 @@ body {
 button {
   border-radius: 60px;
   border: 1px solid transparent;
-  padding: 0.8em 2rem;
+  padding: 1em 2.4rem;
   font-size: 1.2rem;
   font-weight: 500;
   font-family: inherit;
@@ -62,6 +70,16 @@ button:focus-visible {
   color: #fff;
   font-weight: 500;
 }
+
+.btn-color2 {
+  background-color: #c3f499;
+  color: #0d1714;
+}
+
+.btn:hover {
+  border-color: #c3f499;
+}
+
 .btn-container {
   display: flex;
   justify-content: flex-start;
@@ -159,7 +177,7 @@ button:focus-visible {
 }
 /* Head */
 .headtextcontent {
-  margin-bottom: 9.6rem;
+  margin-bottom: 7.5rem;
 }
 .headtitle {
   font-size: 5rem;
@@ -213,12 +231,26 @@ button:focus-visible {
   transition: max-height 0.5s ease, opacity 0.5s ease;
   margin-top: 1rem;
 }
-
 .learnDescription.closed {
   max-height: 0;
   opacity: 0;
 }
-
 .paddingbottom {
   padding-bottom: 0rem;
+}
+
+/* Subfooter */
+.subfooter {
+  min-width: 100%;
+  height: 50rem;
+  padding: 15rem 0;
+}
+.subfooter-textcontainer h3 {
+  color: #fff;
+  font-size: 5rem;
+  line-height: 5rem;
+  width: 50rem;
+  text-align: left;
+  padding-bottom: 4rem;
+  font-weight: 600;
 }

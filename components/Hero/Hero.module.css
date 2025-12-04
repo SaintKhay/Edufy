@@ -89,3 +89,24 @@
     width: 2.2rem;
   }
 }
+
+/* MEDIA QUERIERS */
+@media (max-width: 768px) {
+  .hero {
+    display: block;
+    padding: 3.6rem 0;
+  }
+  .headerprimary {
+    font-size: 5.6rem;
+    height: auto;
+  }
+  .heroimage {
+    width: 100%;
+  }
+  .shapes {
+    width: 22rem;
+  }
+  .designcontainer {
+    height: 33rem;
+  }
+}

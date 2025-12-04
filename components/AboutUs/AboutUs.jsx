@@ -2,6 +2,7 @@ import aImage from "../../src/assets/images/aboutus-image.svg";
 import aIcon1 from "../../src/assets/images/aboutus-icon1.svg";
 import aIcon2 from "../../src/assets/images/aboutus-icon2.svg";
 import styles from "../../components/AboutUs/AboutUs.module.css";
+import Button from "../Button";
 
 export default function AboutUs() {
   const aboutUsMarkUp = [
@@ -22,7 +23,7 @@ export default function AboutUs() {
   ];
 
   return (
-    <section className="aboutus container">
+    <section className="aboutus container" id="section-3">
       <div className="about-us-content ">
         <img src={aImage} className="about-us-image" alt="about-us-img" />
         <div className="aboutustextcontent">
@@ -51,9 +52,7 @@ export default function AboutUs() {
             ))}
           </div>
 
-          <div className="btn-container">
-            <button className="btn">Get Started Now</button>
-          </div>
+          <Button text="Get Started Now" />
         </div>
       </div>
     </section>

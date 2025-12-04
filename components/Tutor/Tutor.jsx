@@ -4,7 +4,7 @@ import styles from "./Tutor.module.css";
 
 export default function Tutor() {
   return (
-    <section>
+    <section id="section-8">
       <div className="container section-padding">
         <Head
           title="Courses trainers at Edux."

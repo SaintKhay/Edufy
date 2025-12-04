@@ -5,7 +5,7 @@ import { coursesData } from "./course";
 
 export default function Courses() {
   return (
-    <section className={`courses   ${styles.coursessection}`}>
+    <section className={`courses   ${styles.coursessection}`} id="section-4">
       <div className="container">
         <Head
           title="Our popular courses"

@@ -11,6 +11,9 @@ import AnimatedSection from "../components/AnimatedSection.jsx";
 import Testimonials from "../components/Testimonial/Testimonial.jsx";
 import Tutor from "../components/Tutor/Tutor.jsx";
 import Faq from "../components/Faq/Faq.jsx";
+import Article from "../components/Articles/Articles.jsx";
+import Subfooter from "../components/Subfooter.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 
 function App() {
   return (
@@ -55,6 +58,14 @@ function App() {
       <AnimatedSection animation="slide-right">
         <Faq />
       </AnimatedSection>
+
+      <AnimatedSection>
+        <Article />
+      </AnimatedSection>
+
+      <Subfooter />
+
+      <Footer />
     </>
   );
 }

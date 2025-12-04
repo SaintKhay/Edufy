@@ -1,0 +1,24 @@
+.articlecontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+/* .articlecontent {
+} */
+.articleimage {
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+.articlehead {
+  font-size: 1.2rem;
+  color: #626965;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+.articletext {
+  font-size: 1.6rem;
+  color: #0d1714;
+  text-align: left;
+  line-height: 2.5rem;
+  font-weight: 500;
+}

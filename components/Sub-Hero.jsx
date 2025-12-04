@@ -19,7 +19,12 @@ export default function SubHero() {
   return (
     <section className="sub-hero container">
       {subHeroMarkup.map((item, index) => (
-        <img key={index} src={item.src} alt={item.alt} />
+        <img
+          key={index}
+          src={item.src}
+          alt={item.alt}
+          className="sub-hero-image"
+        />
       ))}
     </section>
   );

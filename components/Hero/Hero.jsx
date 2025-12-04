@@ -5,6 +5,7 @@ import styles from "../../components/Hero/Hero.module.css";
 import { gsap } from "gsap/gsap-core";
 import TextType from "../../src/animations/TextType.jsx";
 import { designContainer } from "./hero.js";
+import Button from "../Button.jsx";
 
 export default function Hero() {
   return (
@@ -24,9 +25,8 @@ export default function Hero() {
           to our team of experts. Our specialized online courses are designed to
           bring the classroom experience to you, no matter where you are.
         </p>
-        <div className="btn-container">
-          <button className="btn">Get Started Now</button>
-        </div>
+        <Button text="Get Started Now" />
+
         <div className={styles.designcontainer}>
           {designContainer.map((item, index) => (
             <img

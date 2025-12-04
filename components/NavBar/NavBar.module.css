@@ -9,6 +9,13 @@ nav {
   width: 10.6rem;
   height: 3.3rem;
 }
+.menubtn {
+  font-size: 28px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  display: none;
+}
 .navlinks {
   background-color: #f0f5f2;
   padding: 2rem;
@@ -37,5 +44,22 @@ nav {
 }
 .loginbtn {
   background-color: #c3f499;
-  font-size: 1.2rem;
+  color: #0d1714;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .navlinks {
+    display: none;
+  }
+  .loginbtn {
+    display: none;
+  }
+  .menubtn {
+    display: block;
+  }
+  .signin {
+    gap: 0;
+  }
 }
