@@ -6,16 +6,11 @@ import closeIcon from ".//close-icon.svg";
 import styles from ".//Learn.module.css";
 import { learnMarkUp } from "./learn.js";
 
+import QandA from "../QandA.jsx";
+
 export default function Learn() {
   const [items, setItems] = useState(learnMarkUp);
 
-  function toggle(index) {
-    setItems((prev) =>
-      prev.map((items, i) =>
-        i === index ? { ...items, isTrue: !items.isTrue } : items
-      )
-    );
-  }
   return (
     <section className={`${styles.learncontainer}`}>
       <div className={`container  ${styles.learncontent}`}>
@@ -25,45 +20,12 @@ export default function Learn() {
           </h1>
 
           <div className={`aboutussubcontent  ${styles.learnsubcontent}`}>
-            {items.map((item, index) => (
-              <div
-                className={`aboutussubsection ${styles.learnsubsec} `}
-                key={index}
-              >
-                <img
-                  className="aboutusimage"
-                  src={item.image}
-                  alt="about-us-icon"
-                />
-
-                <div>
-                  <div className={styles.learnheadspan}>
-                    <h3 className={`aboutussubhead ${styles.paddingbottom}`}>
-                      {item.heading}
-                    </h3>
-                    <button
-                      type="button"
-                      onClick={() => toggle(index)}
-                      aria-expanded={item.isTrue}
-                      className={styles.toggleButton}
-                    >
-                      <img
-                        className={styles.toggleicon}
-                        src={item.isTrue ? closeIcon : openIcon}
-                        alt={item.isTrue ? "Close" : "Open"}
-                      />
-                    </button>
-                  </div>
-                  <p
-                    className={`aboutussubtext page-text ${
-                      styles.learnDescription
-                    }  ${!item.isTrue ? styles.closed : ""}`}
-                  >
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+            <QandA
+              data={items}
+              open={openIcon}
+              close={closeIcon}
+              setState={setItems}
+            />
           </div>
         </div>
 

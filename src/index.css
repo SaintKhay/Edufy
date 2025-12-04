@@ -19,6 +19,10 @@ body {
   max-width: 100%;
   box-sizing: border-box;
 }
+
+.section-padding {
+  padding: 9.6rem 0;
+}
 .container {
   width: 80%;
   margin: 0 auto;
@@ -61,6 +65,10 @@ button:focus-visible {
 .btn-container {
   display: flex;
   justify-content: flex-start;
+}
+.icon-faq {
+  width: 24px;
+  height: 24px;
 }
 /* Sub-hero */
 .sub-hero {
@@ -158,4 +166,59 @@ button:focus-visible {
   font-weight: 600;
   line-height: 5.5rem;
   padding-bottom: 1rem;
+}
+
+/* Test */
+
+.learnsubsec {
+  border: 1px solid #454a471f;
+  border-radius: 25px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.learnheadspan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.learnimage {
+  width: 100%;
+}
+
+.toggleButton {
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.toggleButton:focus {
+  outline: 0.2px solid rgba(0, 120, 100, 0.25);
+  border-radius: 6px;
+}
+.toggleicon {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+.learnDescription {
+  max-height: 500px;
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  margin-top: 1rem;
+}
+
+.learnDescription.closed {
+  max-height: 0;
+  opacity: 0;
+}
+
+.paddingbottom {
+  padding-bottom: 0rem;
 }

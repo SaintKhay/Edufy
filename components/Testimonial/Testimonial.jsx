@@ -30,11 +30,13 @@ export default function Testimonials() {
                       {item.xUsername}
                     </p>
                   </span>
-                  <img
-                    className={styles.twittericon}
-                    src={xIcon}
-                    alt="X logo"
-                  />
+                  <a href="https://x.com/i/flow/login">
+                    <img
+                      className={styles.twittericon}
+                      src={xIcon}
+                      alt="X logo"
+                    />
+                  </a>
                 </div>
               </div>
 

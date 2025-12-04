@@ -1,5 +1,4 @@
 export default function Head(prop) {
-  console.log(prop);
   return (
     <div className="headtextcontent">
       <h2 className="headtitle  secondary-header">{prop.title}</h2>
