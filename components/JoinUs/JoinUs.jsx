@@ -5,7 +5,7 @@ import { joinSubsectionData } from "./join";
 
 export default function Join() {
   return (
-    <section className={styles.joinsection}>
+    <section className={`${styles.joinsection} container section-padding`}>
       <div className={styles.joincontainer}>
         <h1 className={styles.joinhead}>Join our free workshop</h1>
         <p className={`{styles.jointext} page-text`}>

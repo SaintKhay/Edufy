@@ -23,9 +23,9 @@ function App() {
         <Hero />
       </AnimatedSection>
 
-      <AnimatedSection animation="slide-right">
+      {/* <AnimatedSection animation="slide-right">
         <SubHero />
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       <AnimatedSection animation="slide-right">
         <About />

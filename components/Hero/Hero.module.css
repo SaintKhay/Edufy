@@ -97,8 +97,8 @@
     padding: 3.6rem 0;
   }
   .headerprimary {
-    font-size: 5.6rem;
-    height: auto;
+    font-size: 6rem;
+    height: 15rem;
   }
   .heroimage {
     width: 100%;
@@ -107,6 +107,16 @@
     width: 22rem;
   }
   .designcontainer {
-    height: 33rem;
+    height: 36rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .headerprimary {
+    font-size: 6rem;
+    height: 20rem;
+  }
+  .btn-container-start {
+    justify-content: flex-start;
   }
 }

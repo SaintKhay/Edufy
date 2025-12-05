@@ -2,9 +2,6 @@
   background-color: #f0f5f2;
 }
 
-.coursessection {
-  padding: 9.6rem 0;
-}
 .coursestextcontent {
   margin-bottom: 9.6rem;
 }
@@ -67,4 +64,20 @@
 }
 .seemore {
   justify-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .coursecardcontainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .aboutussubhead {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+}
+@media (max-width: 425px) {
+  .coursecardcontainer {
+    grid-template-columns: 1fr;
+  }
 }

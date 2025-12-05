@@ -1,7 +1,5 @@
 /* Join section */
-.joinsection {
-  padding: 9.6rem 0;
-}
+
 .joincontainer {
   margin-bottom: 35rem;
 }
@@ -83,4 +81,48 @@
 
 .joinsubsection2 p {
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .joinsubcontainer {
+    padding: 13rem 5rem 5rem;
+  }
+
+  .joinimage {
+    width: 80%;
+  }
+  .joinsub {
+    display: block;
+    width: 100%;
+  }
+
+  .joinbtndiv {
+    margin: 2rem 0;
+  }
+  .page-text {
+    font-size: 1.6rem;
+  }
+  .joinsubsection2 {
+    justify-content: space-between;
+    padding: 1.2rem 2.4rem;
+  }
+  .joinsubhead {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .joinsubsection {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .joinsubcontainer {
+    padding: 13rem 2rem 5rem;
+    width: 100%;
+  }
+  .joinimage {
+    top: 0%;
+    width: 90%;
+  }
 }

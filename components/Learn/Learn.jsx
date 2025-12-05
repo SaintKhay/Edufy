@@ -12,7 +12,7 @@ export default function Learn() {
   const [items, setItems] = useState(learnMarkUp);
 
   return (
-    <section className={`${styles.learncontainer}`}>
+    <section className={`${styles.learncontainer} section-padding`}>
       <div className={`container  ${styles.learncontent}`}>
         <div className={styles.learntxtcontent}>
           <h1 className={`${styles.learntitle} secondary-header`}>

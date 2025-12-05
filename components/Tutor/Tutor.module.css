@@ -17,3 +17,19 @@
 .tutoroccupation {
   text-align: left;
 }
+
+@media (max-width: 768px) {
+  .tutorcontent {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .tutorcontent {
+    grid-template-columns: 1fr;
+  }
+  .gap {
+    gap: 3rem;
+  }
+}

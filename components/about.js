@@ -4,7 +4,7 @@ import aboutIcon3 from "../src/assets/images/icon-about3.svg";
 
 export const aboutData = [
   {
-    title: "Learn anywhere",
+    title: "Learn from anywhere",
     content:
       "Learning from anywhere has become a transform aspect of modern education, allowing individuals.",
     image: aboutIcon1,

@@ -10,14 +10,14 @@ export default function Faq() {
   const [items, setItems] = useState(FaqMarkup);
 
   return (
-    <section>
+    <section className="container">
       <Head
         title="Frequently asked questions"
         textfirst="Frequently Asked Questions (FAQ) sections are vital components of any website, especially for platforms like Edux they"
         textsecond="serve as a centralized hub of information where users can quickly find answers."
       />
 
-      <div className={`${styles.faqcontainer} container`}>
+      <div className={`${styles.faqcontainer} `}>
         <QandA
           data={items}
           open={plusIcon}

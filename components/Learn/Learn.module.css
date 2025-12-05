@@ -5,10 +5,6 @@
   align-items: center;
 }
 
-.learncontainer {
-  padding: 9.6rem 0;
-}
-
 .learntitle {
   text-align: left;
   margin-bottom: 2rem;
@@ -22,4 +18,15 @@
 }
 .learnimage {
   width: 100%;
+}
+
+@media (max-width: 425px) {
+  .learncontent {
+    display: grid;
+    grid-template-columns: 1.5fr;
+    gap: 4rem;
+  }
+  .learntitle {
+    height: auto;
+  }
 }

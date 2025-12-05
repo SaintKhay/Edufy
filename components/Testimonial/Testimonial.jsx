@@ -7,7 +7,9 @@ import Head from "../Head";
 
 export default function Testimonials() {
   return (
-    <section className={`courses   ${copyStyles.coursessection}`}>
+    <section
+      className={`courses   ${copyStyles.coursessection}  section-padding`}
+    >
       <div className="container">
         <Head
           title="What our students says."

@@ -3,6 +3,7 @@
   grid-template-columns: auto auto;
   gap: 4rem;
   justify-content: space-between;
+  align-items: start;
 }
 
 .faqcontent {
@@ -18,20 +19,30 @@
   font-size: 1.6rem;
   padding-bottom: 3rem;
 }
-.answer {
-  text-align: left;
-  max-height: 500px;
-  opacity: 1;
-  overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
-  margin-top: 1rem;
-}
 
-.answer.closed {
-  max-height: 0;
-  opacity: 0;
-  margin-top: 0;
-}
 .togglebutton {
   background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .faqcontainer {
+    gap: 1.5rem;
+  }
+
+  .learnDescription {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+  }
+  .learnsbsec {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .faqcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }

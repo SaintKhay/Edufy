@@ -190,8 +190,8 @@ button:focus-visible {
 
 .learnsubsec {
   border: 1px solid #454a471f;
-  border-radius: 25px;
-  padding: 2rem;
+  border-radius: 15px;
+  padding: 1.5rem;
   transition: all 0.3s ease;
 }
 
@@ -253,4 +253,56 @@ button:focus-visible {
   text-align: left;
   padding-bottom: 4rem;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .aboutussubhead {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .learnDescription {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+  }
+}
+@media (max-width: 425px) {
+  .headtitle {
+    font-size: 3.8rem;
+    text-align: left;
+    line-height: 4.5rem;
+  }
+  .section-padding {
+    padding: 4.5rem 0;
+  }
+  .page-text {
+    text-align: left;
+    line-height: 2.7rem;
+    font-size: 1.6rem;
+  }
+  .headtextcontent {
+    margin-bottom: 4.5rem;
+  }
+  .aboutussubhead {
+    font-size: 1.6rem;
+  }
+  .about-us-content {
+    grid-template-columns: 1fr;
+  }
+  .aboutussubhead {
+    font-size: 1.8rem;
+  }
+  .padding-btm {
+    padding-bottom: 3rem;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
 }
